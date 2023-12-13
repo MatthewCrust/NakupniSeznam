@@ -17,6 +17,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 800px; /* Set a maximum width for the container */
-    margin: 0 auto; /* Center the container */
+    max-width: 800px; 
+    margin: 0 auto; 
   }
