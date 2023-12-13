@@ -1,0 +1,22 @@
+.Nadpis{
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .button-box-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .btn{
+    margin: 10px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+  }
