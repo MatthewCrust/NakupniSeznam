@@ -6,11 +6,9 @@ function Navbar() {
     return (
         <nav className="navbar">
         <div className="language-buttons">
-          {/* Czech Flag Button */}
           <button className="language-button">
             <img width={50} height={30} src="eng.png" alt="Czech Flag" />
           </button>
-          {/* English Flag Button */}
           <button className="language-button">
             <img width={50} height={30} src="cz.png" alt="English Flag" />
           </button>
