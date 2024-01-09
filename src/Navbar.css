@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: white; 
+    background-color: white; /* Set your desired background color */
   }
   
   .language-buttons {
@@ -62,7 +62,7 @@
   }
   
   input:checked + .slider {
-    background-color: black; 
+    background-color: black; /* Set your desired dark mode background color */
   }
   
   input:checked + .slider:before {
