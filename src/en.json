@@ -1,0 +1,23 @@
+{
+
+  "title-homepage": "Overview",
+  "button-homepage-show": "Show all",
+  "button-homepage-new": "Create a new list",
+  "title-card": "Title",
+  "button-card-show": "Show shopping list",
+  "button-card-delete": "Delete",
+  "button-seznam-adduser": "Add user",
+  "add-item-button": "Add item",
+  "add-user-button": "Add user",
+  "mark-done-button": "Mark as done",
+  "archive-button": "Archive",
+  "seznam-delete-button": "Delete items",
+  "close-button": "Close",
+  "users-name-placeholder": "User's name",
+  "amount-placeholder": "Amount",
+  "pcs-placeholder": "pcs",
+  "done-button": "Done",
+  "remove-button": "Remove",
+  "list-users-title": "List of users"
+
+}

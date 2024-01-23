@@ -1,0 +1,21 @@
+{
+    "title-homepage":"Přehled",
+    "button-homepage-show": "Zobrazit všechny",
+    "button-homepage-new": "Vytvořit nový seznam",
+    "title-card": "Název",
+    "button-card-show": "Zobrazit nákupní seznam",
+    "button-card-delete": "Smazat",
+    "button-seznam-adduser": "Přidat uživatele",
+    "add-item-button": "přidat položku",
+    "add-user-button":"Přidat uživatele",
+    "mark-done-button":"Označit jako hotové",
+    "archive-button":"Archivovat",
+    "seznam-delete-button":"Smazat položky",
+    "close-button":"Zavřít",
+    "users-name-placeholder":"Jméno uživatele",
+    "amount-placeholder":"Počet",
+    "pcs-placeholder":"ks",
+    "done-button":"Hotovo",
+    "remove-button":"Odebrat",
+    "list-users-title":"Seznam uživatelů"
+}

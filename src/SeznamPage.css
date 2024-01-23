@@ -6,6 +6,14 @@
   border-radius: 30px;
   margin-bottom: 40px;
 }
+
+.title-box-dark{
+  border: solid 2px white;
+  text-align: center;
+  width: 300px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+}
 .main-div{
   display: flex;
   flex-direction: column;

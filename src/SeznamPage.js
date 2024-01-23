@@ -3,6 +3,8 @@ import './SeznamPage.css'
 import Navbar from './Navbar';
 import Item from './Item';
 import Modal from 'react-modal';
+import { useDarkMode } from './DarkModeContext';
+import { useTranslation } from 'react-i18next';
 
 function List() {
 
@@ -55,14 +57,17 @@ function List() {
     closeModal();
   };
 
+  const { darkMode, toggleDarkMode } = useDarkMode();
+
+  const { t } = useTranslation();
 
     return (
       <div>
         <Navbar />
         <div className='main-div'>
 
-          <div className="title-box">
-            <h1>Název</h1>
+          <div className={`title-box ${darkMode ? 'title-box-dark' : ''}`}>
+            <h1>{t("title-card")}</h1>
           </div>
 
           <div className='list-items'>
@@ -72,25 +77,25 @@ function List() {
           </div>
 
 
-          <button onClick={addItem} type="button" class="btn btn-primary">Přidat položku</button>
+          <button onClick={addItem} type="button" class="btn btn-primary">{t("add-item-button")}</button>
           
           <div className='seznam-button-box'>
-            <button onClick={openModal} type="button" class="btn btn-primary">Přidat uživatele</button>
-            <button onClick={done} type="button" class="btn btn-success">Označit jako hotové</button>
-            <button onClick={archive} type="button" class="btn btn-warning">Archivovat</button>
-            <button onClick={removeAll} type="button" class="btn btn-danger">Smazat položky</button>
+            <button onClick={openModal} type="button" class="btn btn-primary">{t("add-user-button")}</button>
+            <button onClick={done} type="button" class="btn btn-success">{t("mark-done-button")}</button>
+            <button onClick={archive} type="button" class="btn btn-warning">{t("archive-button")}</button>
+            <button onClick={removeAll} type="button" class="btn btn-danger">{t("seznam-delete-button")}</button>
           </div>
 
         </div>
 
         <Modal className="modal-custom-style" isOpen={isModalOpen} onRequestClose={closeModal} contentLabel="Přidat uživatele">
-          <h2 id='modal-title'>Přidat uživatele</h2>
+          <h2 id='modal-title'>{t("add-user-button")}</h2>
           <div className='modal-box'>
-            <input placeholder='Jméno uživatele' type="text" value={newUserName} onChange={(e) => setNewUserName(e.target.value)}/>
-            <button class="btn btn-primary" onClick={addUser}>Přidat uživatele</button>
-            <button class="btn btn-danger" onClick={closeModal}>Zavřít</button>
+            <input placeholder={t("users-name-placeholder")} type="text" value={newUserName} onChange={(e) => setNewUserName(e.target.value)}/>
+            <button class="btn btn-primary" onClick={addUser}>{t("add-user-button")}</button>
+            <button class="btn btn-danger" onClick={closeModal}>{t("close-button")}</button>
 
-            <h3>Seznam uživatelů:</h3>
+            <h3>{t("list-users-title")}</h3>
             <ul>
               {users.map((user, index) => (
                 <li key={index}>{user}</li>

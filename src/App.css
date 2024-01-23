@@ -1,4 +1,12 @@
 .App {
   text-align: center;
 }
+.dark-mode-class{
+  background-color: black ;
+  color: white ;
+}
 
+.light-mode-class{
+  background-color: white ;
+  color: black ;
+}

@@ -19,3 +19,9 @@
     flex-direction: column;
     align-items: center;
 }
+
+.dark-mode-class-card{
+    background-color: #262626 ;
+    color: white ;
+    border: solid 1px #4d4d4d;
+  }
